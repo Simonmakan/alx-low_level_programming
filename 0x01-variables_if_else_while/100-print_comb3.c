@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - inventing in a combination of brain and materials
  * Return: (0) (the project is done well)
