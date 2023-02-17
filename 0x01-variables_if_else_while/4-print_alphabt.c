@@ -10,10 +10,12 @@ int main(void)
 	s = 'a';
 	while
 		(s <= 'z') {
-			if ((s != 'q' || s != 'e') && s <= 'z')
+			if (s != 'e' && s != 'q')
+			{
 				putchar(s);
+			}
 			s++;
-		}
+	}
 	putchar('\n');
 	return (0);
 }
