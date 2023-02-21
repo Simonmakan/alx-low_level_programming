@@ -1,29 +1,24 @@
 #include <stdio.h>
 /**
- * main - pt
- * Return: 0 (tasks done)
+ * main - Prints the add of the Fibonacci numbers
+ * Return: 0 (project success).
  */
 int main(void)
 {
-	int a;
-	long int b = 1;
-	long int c = 2;
+int a;
+long int l1, l2, l3;
 
-	a = 0;
-	while (a < 50)
-	{
-		if (a == 0)
-			printf("%ld", b);
-		else if (a == 1)
-			printf(". %ld", c);
-		else
-		{
-			c += b;
-			b = c - b;
-			printf(". %ld", c);
-		}
-		++a;
-	}
-	printf("\n");
-	return (0);
+l1 = 1;
+l2 = 2;
+printf("%ld, %ld", l1, l2);
+for (a = 0; a < 48; a++)
+{
+l3 = l1 + l2;
+printf(", %ld", l3);
+l1 = l2;
+l2 = l3;
 }
+printf("\n");
+return (0);
+}
+
