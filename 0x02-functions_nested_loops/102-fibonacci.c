@@ -6,7 +6,8 @@
 int main(void)
 {
 	int a;
-	long int b = , k = 2;
+	long int b = 1;
+	long int c = 2;
 
 	a = 0;
 	while (a < 50)
@@ -14,14 +15,14 @@ int main(void)
 		if (a == 0)
 			printf("%ld", b);
 		else if (a == 1)
-			printf(". %ld", k);
+			printf(". %ld", c);
 		else
 		{
-			k += j;
-			b = k - b;
-			printf(". %ld", k);
+			c += b;
+			b = c - b;
+			printf(". %ld", c);
 		}
-		++1;
+		++a;
 	}
 	printf("\n");
 	return (0);
