@@ -14,8 +14,8 @@ int main(void)
 		{
 			b += a;
 		}
-		1++;
+		a++;
 	}
-	printf("%d\n", z);
+	printf("%d\n", b);
 	return (0);
 }
