@@ -2,7 +2,8 @@
 /**
  * main - new term sequence
  * Return: 0 (work done)
-
+ */
+int main(void)
 {
 	int a = 0;
         long j = 1, k = 2, total = k;
@@ -15,6 +16,6 @@
 		j = k - j;
 		++a;
 	}
-	printf("%ld\n", sum);
+	printf("%ld\n", total);
 	return (0);
 }
