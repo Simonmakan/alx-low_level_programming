@@ -1,45 +1,48 @@
 #include <stdio.h>
 /**
- * main - prints first ninty eight fibonacci
- * Return: 0 (task done)
+ * main - the first ninety eight  numbers
+ * Return: 0 (project success)
  */
 int main(void)
 {
-	int count;
-	unsigned long no1h1, no1h2, no2h2, no2h1;
-	unsigned long no1 = 0, no2 = 1, total;
-	unsigned long h1, h2;
-	int a;
+	int c, symoh, slide;
+	long int n1, n2, fn, fn2, n11, n22;
 
-	count = a;
-	for (a = 0; a < 92; a++)
-	{
-		total = no1 + no2;
-		printf("%lu, ", total);
-		no1 = no2;
-		no2 = total;
-	}
-	no1h1 = no1 / 10000000000;
-	no2h1 = no2 / 10000000000;
-	no1h2 = no1 % 10000000000;
-	no2h2 = no2 % 10000000000;
-	for (a = 93; a < 99; a++)
-	{
-		h1 = no1h1 + no2h1;
-		h2 = no1h2 + no2h2;
-		if (no1h2 + no2h2 > 9999999999)
-	{
-		h1 += 1;
-		h2 %= 10000000000;
-	}
-	printf("%lu%lu", h1, h2);
-	if (a != 98)
-		printf(", ");
-	no1h1 = no2h1;
-	no1h2 = no2h2;
-	no2h1 = h1;
-	no2h2 = h2;
-		}
-	printf("\n");
-	return (0);
+n1 = 1;
+n2 = 2;
+symoh =  slide = 1;
+printf("%ld, %ld", n1, n2);
+for (c = 0; c < 96; c++)
+{
+if (symoh)
+{
+fn = n1 + n2;
+printf(", %ld", fn);
+n1 = n2;
+n2 = fn;
+}
+else
+{
+if (slide)
+{
+n11 = n1 % 1000000000;
+n22 = n2 % 1000000000;
+n1 = n1 / 1000000000;
+n2 = n2 / 1000000000;
+slide = 0;
+}
+fn2 = (n11 + n22);
+fn = n1 + n2 + (fn2 / 1000000000);
+printf(", %ld", fn);
+printf("%ld", fn2 % 1000000000);
+n1 = n2;
+n11 = n22;
+n2 = fn;
+n22 = (fn2 % 1000000000);
+}
+if (((n1 + n2) < 0) && slide == 1)
+symoh = 0;
+}
+printf("\n");
+return (0);
 }
