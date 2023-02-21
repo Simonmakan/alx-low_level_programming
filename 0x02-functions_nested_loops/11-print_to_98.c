@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
  * print_to_98 - print natural no to ninty eight
+ * @n: no of numbers
  * Return: 0 (project done)
  */
 void print_to_98(int n)
@@ -18,13 +19,23 @@ void print_to_98(int n)
 			}
 			else
 			{
+				printf("%d, ", n);
+			}
+		}
+	}
+	else
+	{
+		for (; n >= 98; n--)
+		{
+			if (n == 98)
+			{
 				printf("%d", n);
 				printf("\n");
 				break;
 			}
 			else
 			{
-				..........................................................
+			printf("%d, ", n);
 			}
 		}
 	}
