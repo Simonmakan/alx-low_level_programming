@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_diagonal - print diagonal line
- * @n: xtimes 
+ * @n: xtimes
  * Return: (void)
  */
 void print_diagonal(int n)
