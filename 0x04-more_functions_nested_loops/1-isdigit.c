@@ -2,17 +2,17 @@
 #include "main.h"
 
 /**
- * _isdigit - A function that checks for a digit.
- *  * @c: is the character to  check *
- * Return: 1 if c is a digit otherwise 0
+ * _isdigit - digits checker
+ *  * @c: xters
+ * Return: 1 (digit) 0 (otherwise)
  */
 
 int _isdigit(int c)
 {
-	int a = isdigit(c);
+int s = isdigit(c);
 
-	if (a == 0)
-		return (a);
-	else
-		return (1);
+if (s == 0)
+return (s);
+else
+return (1);
 }
