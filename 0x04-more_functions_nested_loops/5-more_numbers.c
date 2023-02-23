@@ -1,32 +1,32 @@
 #include "main.h"
 /**
- * more_numbers - A function who print 10 times the numbers, from 0 to 14
- *
- * Description - Does not receive any parameters
- *
- * Return: Does not return anything
+ * more_numbers - print no xten 
+ * Return: (void)
  */
 void more_numbers(void)
 {
-	int i, j, k, l;
+int s;
+int m;
+int n;
+int p;
 
-	for (j = 0; j < 10; j++)
-	{
-		k = 0;
-		l = 0;
-		for (i = 48; i < 63; i++)
-		{
-			if (!(i > 57))
-				l = i;
-			else
-			{
-				l = i - 10;
-				k = 49;
-				_putchar(k);
-			}
-			_putchar(l);
-		}
-		_putchar('\n');
-	}
+for (m = 0; m <= 9; m++)
+{
+n = 0;
+p = 0;
+for (s = 48; s < 63; s++)
+{
+if (!(s > 57))
+p = s;
+else
+{
+p = s - 10;
+n = 49;
+_putchar(n);
+}
+_putchar(p);
+}
+_putchar('\n');
+}
 }
 
