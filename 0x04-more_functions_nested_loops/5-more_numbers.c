@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * more_numbers - print no xten 
+ * more_numbers - print no xten
  * Return: (void)
  */
 void more_numbers(void)
