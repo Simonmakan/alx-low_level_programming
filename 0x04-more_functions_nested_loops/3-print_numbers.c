@@ -1,15 +1,15 @@
 #include "main.h"
 /**
- * print_numbers - A function who print the numbers:
- * Return: Does not return anything
+ * print_numbers - print numbers
+ * Return: (void)
  */
 void print_numbers(void)
 {
-	int i;
+int i;
 
-	for (i = 48; i < 58; i++)
-	{
-		_putchar(i);
-	}
-	_putchar('\n');
+for (i = '0'; i < '9'; i++)
+{
+_putchar(i);
+}
+_putchar('\n');
 }
