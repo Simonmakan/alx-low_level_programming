@@ -1,15 +1,8 @@
 #include "main.h"
-
 /**
  * rev_string - rev
  * @n: int
- * Return: (0 project done well)
- * infinite_add - add 2 numbers together
- * @n1: text representation of 1st number to add
- * @n2: text representation of 2nd number to add
- * @r: pointer to buffer
- * @size_r: buffer size
- * Return: pointer to calling function
+ * Return: (r)
  */
 void rev_string(char *n)
 {
@@ -28,6 +21,14 @@ tmp = *(n + m);
 *(n + s) = tmp;
 }
 }
+/**
+ * infinite_add - sum up no
+ * @n1: first no
+ * @n2: second no
+ * @r: pointer
+ * @size_r: size
+ * Return: r
+ */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 int ovf = 0, s = 0, m = 0, dgts = 0;
@@ -46,11 +47,11 @@ while (m >= 0 || s >= 0 || ovf == 1)
 if (s < 0)
 v1 = 0;
 else
-v1 = *(n1 + s) - '0';
+v1 = *(n1 + s) -'0';
 if (m < 0)
 v2 = 0;
 else
-v2 = *(n2 + m) - '0';
+v2 = *(n2 + m) -'0';
 tmpt = v1 + v2 + ovf;
 if (tmpt >= 10)
 ovf = 1;
