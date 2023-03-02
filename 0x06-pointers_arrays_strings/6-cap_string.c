@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * cap_string - make caps 
+ * cap_string - make caps
  * @str: strng to be capitalised
- * Return: (str) 
+ * Return: (str)
  */
 char *cap_string(char *str)
 {
@@ -19,7 +19,7 @@ str[s] = str[s] - 32;
 m = 0;
 while (c[m] != '\0')
 {
-if (c[m] == str[s] && (str[s+ 1] >= 97 && str[s + 1] <= 122))
+if (c[m] == str[s] && (str[s + 1] >= 97 && str[s + 1] <= 122))
 {
 str[s + 1] = str[s + 1] - 32;
 }
