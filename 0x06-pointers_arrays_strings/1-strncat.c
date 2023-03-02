@@ -16,7 +16,7 @@ while (dest[s] != 0)
 s++;
 }
 m = 0;
-while (src[m] != 0 && s < n)
+while (src[m] != 0 && m < n)
 {
 dest[s] = src[m];
 s++;
