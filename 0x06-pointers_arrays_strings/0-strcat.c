@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 /**
- * _strcat - conc. no 
+ * _strcat - conc. no
  * @dest: string
  * @src: parameter
  * Return: dest
