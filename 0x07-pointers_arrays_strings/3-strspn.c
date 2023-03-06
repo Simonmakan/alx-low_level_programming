@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *_strspn - length substring
- *@s: pointer 1 
+ *@s: pointer 1
  *@accept: pointer (substring)
  *Return: (length)
  */
