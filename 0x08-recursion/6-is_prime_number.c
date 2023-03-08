@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *get_prime - no (prime/unprime) 
+ *get_prime - no (prime/unprime)
  *@p: no.
  *@v: var.
  *Return: (1 & 0)
