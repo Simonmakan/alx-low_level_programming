@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *main - main func 
+ *main - main func
  *Description: min no. of coins
  *@argc: arguments
  *@argv: array pointer
