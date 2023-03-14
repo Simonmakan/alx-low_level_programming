@@ -1,18 +1,17 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
- * free_grid - freeing matrix
- * @grid: matrix being passed
- * @height: freeing using this variable
- * Return: nothing
+ * free_grid - matrix free
+ * @grid: matrix
+ * @height: height
+ * Return: (void)
  */
 void free_grid(int **grid, int height)
 {
-	int a;
+int s;
 
-	for (a = 0; a < height; a++)
-		free(grid[a]);
-	free(grid);
+for (s = 0; s < height; s++)
+free(grid[s]);
+free(grid);
 }
