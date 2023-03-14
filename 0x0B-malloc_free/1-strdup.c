@@ -2,30 +2,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *_strdup - pointer to new space
- *contains string parameter
- *@str: string to be copied
- *Return: pointer/NULL
+ * _strdup - funcon ng
+ * @str: string t coped
+ * Return: Null for f// ptr.
  */
 char *_strdup(char *str)
 {
-int m, length;
-char *s;
+	char *s;
+	int a, b;
 
-if (str == 0)
-{
-return (0);
-}
-for (length = 0; str[length] != 0; length++)
-length++;
-s = malloc(sizeof(char) * length);
+	if (str == 0)
+		return (NULL);
+	for (a = 0; str[a] != '\0'; a++)
+		;
+a++;
+s = malloc(a * sizeof(*s));
 if (s == 0)
-{
-return (0);
-}
-for (m = 0; m <= length; m++)
-{
-s[m] = str[m];
-}
+return (NULL);
+for (b = 0; b < a; b++)
+s[b] = str[b];
 return (s);
 }
