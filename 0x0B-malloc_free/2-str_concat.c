@@ -3,33 +3,33 @@
 #include <stdlib.h>
 /**
  * str_concat - concatenate strings
- * @s1: string 1
- * @s2: string 2
- * Return: NULL if failure
+ * @s1: string1
+ * @s2: string2
+ * Return: (void)/pointer 
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *s;
-	int a, b, c, d;
+char *s;
+int m, n, p, q;
 
-	if (s1 == 0)
-		s1 = "";
-	if (s2 == 0)
-		s2 = "";
-	for (a = 0; s1[a] != '\0'; a++)
-		;
-	for (b = 0; s2[b] != '\0'; b++)
-		;
-	b++;
-	s = malloc(a * sizeof(*s1) + b * sizeof(*s2));
-	if (s == 0)
-		return (NULL);
-	for (c = 0, d = 0; c < a + b; c++)
-	{
-		if (c < a)
-			s[c] = s1[c];
-		else
-			s[c] = s2[d++];
-	}
-	return (s);
+if (s1 == 0)
+s1 = "";
+if (s2 == 0)
+s2 = "";
+for (m = 0; s1[m] != '\0'; m++)
+;
+for (n = 0; s2[n] != '\0'; n++)
+;
+n++;
+s = malloc(m * sizeof(*s1) + n * sizeof(*s2));
+if (s == 0)
+return (NULL);
+for (p = 0, q = 0; p < m + n; p++)
+{
+if (p < m)
+s[p] = s1[p];
+else
+s[p] = s2[q++];
+}
+return (s);
 }
